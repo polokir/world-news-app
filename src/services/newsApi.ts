@@ -1,7 +1,7 @@
 import { Article, NewsResponse } from '../types/news';
 import { Category } from '../constants/categories';
 
-const API_KEY = 'YOUR_NEWSAPI_KEY';
+const API_KEY = '1e16297d452f42a18fd30eb2e7da87bf';
 const BASE_URL = 'https://newsapi.org/v2';
 
 const request = async (url: string): Promise<Article[]> => {
