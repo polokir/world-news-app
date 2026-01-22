@@ -63,9 +63,9 @@ export default function App() {
         {loading && <CircularProgress />}
         {error && <Typography color="error">{error}</Typography>}
 
-        <Grid container spacing={3}>
+        <Grid container spacing={1} columnGap={1} rowGap={1} justifyContent={'center'}>
           {articles.map((article) => (
-            <Grid component={'div'} xs={12} md={6} lg={4} key={article.url}>
+            <Grid component={'div'} xs={12} md={5} lg={3} key={article.url}>
               <NewsCard article={article} />
             </Grid>
           ))}
